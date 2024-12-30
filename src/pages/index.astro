@@ -1,11 +1,48 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import Title from "../components/Title.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<h1>Hello Astro!</h1>
+	<header>
+		<Title title="Hello word" />
+	</header>
+	<main>
+		
+		<p>
+			Aliqua culpa sit amet ut aliquip et enim nulla aliquip deserunt anim
+			nulla labore. Mollit mollit dolor deserunt aliquip mollit
+			incididunt. Aliqua mollit velit veniam commodo elit incididunt
+			voluptate ea est magna ut.
+		</p>
+	</main>
 </Layout>
 <style>
-
+	:root {
+		--color-primary: #333;
+		--color-secondary: #fff;
+	}
+	body {
+		display: flex;
+		flex-flow: column;
+		width: 100dvw;
+		min-height: 100dvh;
+		background-color: var(--color-primary);
+		color: var(--color-secondary);
+		overflow: clip;
+	}
+	main {
+		display: flex;
+		flex-flow: column;
+		padding: 1em;
+		background-color: var(--color-secondary);
+	}
+	header{
+		padding: 1em;
+		background-color: var(--color-secondary);
+	}
+	p{
+		color: var(--color-primary);
+	}
+	
 </style>
