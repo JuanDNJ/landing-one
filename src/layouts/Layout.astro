@@ -1,0 +1,28 @@
+---
+const LANGUAGE: string = "es";
+const TITLE_WEB: string = "Astro Basics";
+---
+<!doctype html>
+<html lang={LANGUAGE}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="./css/normalize.css">
+		<title>{TITLE_WEB}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html,
+	body {
+		margin: 0;
+		width: 100dvw;
+		min-height: 100dvh;
+	}
+	
+</style>
